@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I Love YouTube✨</title>
+    <style>
+      .nimosChannel {
+        display: block;
+        text-align: center;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        line-height: 140px;
+        background-color: #ffdbff;
+        max-width: 110%;
+        text-decoration: none;
+        font-size: 35px;
+        font-style: oblique;
+        transition: all 150ms ease-in-out;
+      }
+      .nimosChannel:hover {
+        opacity: 0.9;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      h1 {
+        text-align: center;
+      }
+      .image {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 1px;
+      }
+      .p-one {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 15px;
+      }
+
+      h2 {
+        text-align: center;
+        font-style: italic;
+      }
+      .p-two {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 15px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 15px 20px;
+        background-color: #ffdbff;
+        color: #ffffff;
+        font-size: 22px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+        opacity: 0.9;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 10px;
+        text-decoration: none;
+      }
+      .footer :hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      .container {
+        background-color: #f5fafe;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a
+        href="https://www.youtube.com/channel/UCblGBtdwRx7_fAAijqhwO0w"
+        target="_blank"
+        class="nimosChannel"
+        >Click Here To Visit My Channel 📸</a
+      >
+
+      <h1>Nimo's Channel: Why I love YouTube</h1>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/358/original/Screenshot_2023-06-19_at_16.59.36.png?1687190501"
+        class="image"
+        alt="profile-picture"
+      />
+      <p class="p-one">
+        I love YouTube because it offers an incredible platform for endless
+        exploration and discovery. From educational content to entertaining
+        vlogs, there's something for everyone. <br />
+        <br />
+        The diverse community of creators on YouTube never fails to inspire me
+        with their unique perspectives and talents. Whether I'm seeking a laugh,
+        a tutorial, or heartfelt stories, YouTube always delivers a captivating
+        experience that keeps me coming back for more. <br />
+        <br />
+        It's a space where I can learn, connect, and be entertained, all at my
+        own pace and according to my interests. YouTube truly empowers me to
+        explore the world from the comfort of my screen.
+      </p>
+
+      <h2>Unleashing Infinite Entertainment!</h2>
+      <p class="p-two">
+        My channel to me is a captivating online destination where I share my
+        passion for lifestyle, beauty, fashion, fitness & everything in between!
+        Join me on a journey to entertain, educate, and inspire people. <br />
+        Get ready to embark on exciting adventures, explore fascinating
+        subjects, and experience the world. <br />
+        So, grab a seat, hit that subscribe button, and let's embark on this
+        incredible YouTube adventure together!
+      </p>
+      <br />
+      <button class="subscribeButton">👉 Subscribe 👈</button>
+
+      <hr />
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.linkedin.com/in/nimo-mohamed-3a6b28179/"
+          target="_blank"
+          >Nimo Mohamed</a
+        >
+      </p>
+    </div>
+    <script>
+      function subscribe() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+
+        let h1 = document.querySelector("h1");
+
+        if (age >= 18)
+          h1.innerHTML =
+            "Hi" + " " + name + ", Thank You for wanting to subscribe!🙏🏾";
+        else {
+          h1.innerHTML =
+            "Sorry" + " " + name + ", You are not old enough to subscribe yet!";
+        }
+      }
+      let subscribeButton = document.querySelector("button");
+
+      subscribeButton.addEventListener("click", subscribe);
+    </script>
+  </body>
+</html>
